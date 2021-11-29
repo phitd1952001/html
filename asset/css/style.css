@@ -1,0 +1,42 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-color: var(--background-color);
+    /* cuộn lên xuống qua trang */
+    scroll-behavior: smooth;
+    /* vị trí ban đầu */
+    position: relative;
+    /* không tràn ra thanh ngang */
+    overflow-x: hidden;
+}
+
+.header {
+    text-decoration: hidden;
+    overflow-x: hidden;
+    /* cho thanh công cụ đứng 1 chỗ không cho cuộn theo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* chiều rộng tùy thuộc vào kích thuốc màn hình*/
+    width: 100%;
+    /* thanh công cụ trên */
+    z-index: 9999;
+    background-color: var(--background-color);
+    /* đổ xanh lá xanh dương độ trong suốt, phản chiếu top right bottom left */
+    box-shadow: rgba(99, 99, 99, 0, 2) 0px 2px 8px 0px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    
+}
